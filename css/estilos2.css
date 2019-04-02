@@ -1,0 +1,29 @@
+#barraSuperior {
+    background-color: rgb(20, 133, 240);
+    padding: 0px 5px 10px 10px;
+}
+
+#menuB {
+    background-color: white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    width: 100px;
+}
+
+#perfil {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            left: 100px;
+}
+
+#info {
+    padding-top: 20%;
+    padding-left: 5%;
+}
+
+label2 {
+    color: black;
+    padding: 8px;
+}
