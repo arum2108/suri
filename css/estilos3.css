@@ -1,0 +1,40 @@
+#barraSuperior {
+    background-color: rgb(20, 133, 240);
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0%;
+}
+
+ul {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(20, 133, 240);
+}
+
+li2 {
+    float: center;
+    padding-left: 29%;
+    padding-top: 5%;
+}
+
+li {
+    float: left;
+    background-color: #CCC;
+}
+
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #999;
+}
