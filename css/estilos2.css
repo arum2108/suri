@@ -12,10 +12,16 @@
 }
 
 #perfil {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            left: 100px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+#perfilC {
+    padding-left: 29%;
+    padding-top: 5%;
+    display: block;
+    margin: auto;
 }
 
 #info {
