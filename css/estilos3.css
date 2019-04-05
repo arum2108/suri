@@ -49,7 +49,7 @@ li a:hover {
 #agregar {
     height: 26px;
     width: 100px;
-    background-color: #03b3f3bb;
+    background-color: rgb(20, 133, 240);
     border-radius: 50px;
     box-shadow: 0 10px #999;
 }
@@ -86,16 +86,18 @@ li a:hover {
 
 #buscar {
     background-color: transparent;
-    height: 42px;
-    width: 60px;
+    height: 34px;
+    width: 44px;
     position: fixed;
-    right: 5px;
+    right: 12px;
+    top: 5px;
 }
 
 #atras {
     background-color: rgb(20, 133, 240);
-    height: 42px;
-    width: 60px;
+    height: 36px;
+    width: 52px;
     position: fixed;
-    left: 5px;
+    left: 7px;
+    top: 5px;
 }
