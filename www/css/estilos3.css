@@ -1,0 +1,103 @@
+#barraSuperior {
+    background-color: rgb(20, 133, 240);
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(20, 133, 240);
+}
+
+li2 {
+    float: left;
+    background-color: rgb(20, 133, 240);
+}
+
+li2 a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 91px;
+    text-decoration: none;
+}
+
+li {
+    float: left;
+    background-color: #CCC;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #999;
+}
+
+#agregar {
+    height: 26px;
+    width: 100px;
+    background-color: rgb(20, 133, 240);
+    border-radius: 50px;
+    box-shadow: 0 10px #999;
+}
+
+#agregar:hover {
+    background-color: #91bdff;
+}
+
+#agregar:active {
+    background-color: #91bdff;
+    box-shadow: 0 5px #999;
+    transform: translateY(5px);
+}
+
+.centro {
+    position: relative;
+    padding: 10px;
+    left: 30%;
+}
+
+.box {
+    margin: 0px auto;
+    width: 300px;
+    height: 50px;
+}
+
+#search {
+    position: relative;
+    border-radius: 50px;
+    width: 231px;
+    height: 46px;
+    left: 70px;
+}
+
+#buscar {
+    background-color: transparent;
+    height: 34px;
+    width: 44px;
+    position: fixed;
+    right: 12px;
+    top: 5px;
+}
+
+#atras {
+    background-color: rgb(20, 133, 240);
+    height: 36px;
+    width: 52px;
+    position: fixed;
+    left: 7px;
+    top: 5px;
+}
