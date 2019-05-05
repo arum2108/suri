@@ -1,0 +1,112 @@
+body {
+    margin: 0%;
+}
+
+#barraSuperior {
+    background-color: rgb(20, 133, 240);
+    padding: 0px 5px 10px 10px;
+}
+
+#menuB {
+    background-color: rgb(20, 133, 240);
+    height: 30px;
+    width: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#perfil {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+#perfilC {
+    padding-left: 29%;
+    padding-top: 5%;
+    display: block;
+    margin: auto;
+}
+
+#info {
+    padding-top: 20%;
+    padding-left: 5%;
+}
+
+label2 {
+    color: black;
+    padding: 8px;
+    font-size: 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(20, 133, 240);
+}
+
+li2 {
+    float: left;
+    background-color: rgb(20, 133, 240);
+}
+
+li2 a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 109px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+li {
+    float: left;
+    background-color: #CCC;
+}
+
+li button {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #999;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #4E85E5;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: rgb(34, 110, 241);
+}
+
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}

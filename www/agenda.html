@@ -7,19 +7,21 @@
     <title>Agenda</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="StyleSheet" href="css/estilos3.css" type="text/css">
+    <script>
+    function goBack() {
+      window.history.back();
+    }
+    </script>
 </head>
 
 <body>
 
     <ul>
-        <li><img src="imagenes/atras.png" id="atras" onclick="location.href='inicioV2.html'"></li>
+        <li><img src="imagenes/atras.png" id="atras" onclick="goBack()"></li>
         <li2><input type="search" id="search" placeholder="buscar..." /></li2>
         <li><img src="imagenes/buscar.png" id="buscar" onclick="" ></li>
     </ul>
     <hr>
-    <div>
-        <!--lista de eventos-->
-    </div>
     <div class="centro">
         <button id="agregar" onclick="location.href=''">Añadir</button>
     </div>

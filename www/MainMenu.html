@@ -8,6 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="StyleSheet" href="css/estilos2.css" type="text/css">
     <script type="text/javascript" src="scripts/scrips2.js"></script>
+    <script>
+      var queryString = decodeURIComponent(window.location.search);
+      queryString = queryString.substring(6);
+      var queries = queryString.split("&");
+      var obj=JSON.parse(queries[0]);
+      setTimeout(function () {
+        document.getElementById("nombre").innerHTML="Nombre: "+obj[0].nombre;
+        document.getElementById("cod").innerHTML="Código: "+obj[0].codigo;
+        document.getElementById("carrera").innerHTML="Carrera: "+obj[0].carreras[0].carrera;
+        document.getElementById("centro").innerHTML="Universidad: "+obj[0].carreras[0].centro;
+        document.getElementById("status").innerHTML="Estatus: "+obj[0].carreras[0].estatus;
+        document.getElementById("perfil").src="data:image/jpeg;base64,"+obj[0].foto;
+      }, 10);
+    </script>
 </head>
 
 <body>
@@ -22,30 +36,26 @@
         <a href="index.html">Salir</a>
         <hr>
     </div>
-
     <ul>
         <li><img src="imagenes/menu1.png" id="menuB" onclick="openNav()"></li>
-        <li2><a>Nombre</a></li2>
+        <li2><a id="nombre">Nombre</a></li2>
     </ul>
-
     <div id="perfilC">
         <img id="perfil" src="imagenes/user.png">
     </div>
     <div id="info">
-        <label2>Codigo:</label2>
+        <label2 id=cod>Codigo:</label2>
         <br>
         <br>
-        <label2>Universidad:</label2>
+        <label2 id="centro">Universidad:</label2>
         <br>
         <br>
-        <label2>Carrera:</label2>
+        <label2 id="carrera">Carrera:</label2>
         <br>
         <br>
-        <label2>Estatus:</label2>
+        <label2 id="status">Estatus:</label2>
         <br>
         <br>
     </div>
-
 </body>
-
 </html>

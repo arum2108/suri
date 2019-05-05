@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sistema Universitario de Respuesta Inmediata</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="StyleSheet" href="css/estilos.css" type="text/css">
+	<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+	<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+	<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script>
+      $(function () {
+        $('form').on('submit', function (e) {
+          e.preventDefault();
+          $.ajax({
+            type: 'post',
+            url: 'https://dcc.000webhostapp.com/infoEstudiante.php',
+            data: $('form').serialize(),
+            success: function (response) {
+							if(response.length>100){
+								response=response.substring(57,response.length-4);
+								location.href="MainMenu.html?json="+response;
+							} else {
+								alert("Error");
+							}
+            }
+          });
+        });
+      });
+    </script>
+</head>
+
+<body background="imagenes/fondo.jpg">
+	<div class="inicio">
+		<center>
+			<a>LogIn</a>
+			<form>
+      	<input name="codigo" type="number">
+				<br>
+				<br>
+      	<input name="nip" type="password">
+      	<br>
+      	<input type="submit" value="enviar">
+			</form>
+		</center>
+	</div>
+</body>
+</html>
